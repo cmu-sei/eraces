@@ -742,6 +742,14 @@ proc ForTheOperator {subOperator} {
     output [Class $subOperator]
     output "\n"
 
+
+    #set vcategory [Get $subOperator category]
+    #set vgeneric [Get $subOperator generic]
+    #set vimported [Get $subOperator imported]
+    #output "vgeneric: $vgeneric"
+    #output "  vimported: $vimported"
+    #output "\n"
+
     #For each input we save the ones that are Generic
     array unset localVariableArray
     MapRole $subOperator input [list "ForEachInput" $subOperator]
